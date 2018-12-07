@@ -1,0 +1,49 @@
+.bb8-head{
+  display: block;
+  position: relative;
+  z-index: 5;
+  padding-bottom: 160px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: -176px;
+  animation: bb8-head-spin 3s infinite linear;
+}
+.bb8-body{
+  display: block;
+
+  position: relative;
+  z-index: 2;
+  animation: bb8-body-spin 8s infinite linear;
+}
+
+
+@keyframes bb8-body-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(480deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(1200deg);
+  }
+}
+
+@keyframes bb8-head-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
